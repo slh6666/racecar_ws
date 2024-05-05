@@ -1,0 +1,14 @@
+<launch>
+    <node pkg="global_planner" type= "global_planner_node" name="global_planner_node" output="screen">
+
+       <rosparam file="$(find racecar_gazebo)/yaml/waypoint.yaml" command="load" />
+
+    </node>
+
+     <!-- <node pkg="global_planner" type= "waypoint_loader.py" name="waypoint_loader" output="screen">
+
+       <param name="path"  value="$(find global_planner)/csv/path1.csv"/>
+       <param name="velocity"  value="10"/>
+
+    </node> -->
+</launch>
